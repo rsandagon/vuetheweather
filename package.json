@@ -1,0 +1,37 @@
+{
+  "name": "vuetheweather",
+  "version": "1.0.0",
+  "description": "weather api consumer using vuejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsandagon/vuetheweather.git"
+  },
+  "keywords": [
+    "vuejs",
+    "weather"
+  ],
+  "author": "rsandagon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rsandagon/vuetheweather/issues"
+  },
+  "homepage": "https://github.com/rsandagon/vuetheweather#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "parcel": "^1.9.7",
+    "vue": "^2.5.17"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.2.0",
+    "babel-preset-env": "^1.7.0",
+    "parcel-bundler": "^1.9.7"
+  }
+}
