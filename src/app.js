@@ -29,8 +29,9 @@ new Vue({
           this.humidity = response.data.main.humidity + "%";
           this.wind = response.data.wind.speed + "m/s";
           this.overcast = response.data.weather[0].description;
-          this.icon =
-            "images/" + response.data.weather[0].icon.slice(0, 2) + ".svg";
+          this.icon = `http://openweathermap.org/img/w/${
+            response.data.weather[0].icon
+          }.png`;
           this.sunrise = new Date(response.data.sys.sunrise * 1000)
             .toLocaleTimeString("en-GB")
             .slice(0, 4);

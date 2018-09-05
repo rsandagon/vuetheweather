@@ -11662,7 +11662,7 @@ new _vue2.default({
         _this.humidity = response.data.main.humidity + "%";
         _this.wind = response.data.wind.speed + "m/s";
         _this.overcast = response.data.weather[0].description;
-        _this.icon = "images/" + response.data.weather[0].icon.slice(0, 2) + ".svg";
+        _this.icon = "http://openweathermap.org/img/w/" + response.data.weather[0].icon + ".png";
         _this.sunrise = new Date(response.data.sys.sunrise * 1000).toLocaleTimeString("en-GB").slice(0, 4);
         _this.sunset = new Date(response.data.sys.sunset * 1000).toLocaleTimeString("en-GB").slice(0, 4);
       }).catch(function (error) {
